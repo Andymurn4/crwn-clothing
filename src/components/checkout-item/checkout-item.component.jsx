@@ -1,5 +1,7 @@
 import { useContext } from "react";
+
 import { CartContext } from "../../contexts/cart.context";
+
 import {
   CheckoutItemContainer,
   ImageContainer,
@@ -17,7 +19,6 @@ const CheckoutItem = ({ cartItem }) => {
     useContext(CartContext);
 
   const clearItemHandler = () => clearItemFromCart(cartItem);
-
   const addItemHandler = () => addItemToCart(cartItem);
   const removeItemHandler = () => removeItemToCart(cartItem);
 

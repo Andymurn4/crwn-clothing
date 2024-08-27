@@ -1,14 +1,14 @@
 import ProductCard from "../product-card/product-card.component";
 
 import {
-  CategoryPreviewComponent,
-  Preview,
+  CategoryPreviewContainer,
   Title,
+  Preview,
 } from "./category-preview.styles.jsx";
 
 const CategoryPreview = ({ title, products }) => {
   return (
-    <CategoryPreviewComponent>
+    <CategoryPreviewContainer>
       <h2>
         <Title to={title}>{title.toUpperCase()}</Title>
       </h2>
@@ -22,7 +22,7 @@ const CategoryPreview = ({ title, products }) => {
             ))
         }
       </Preview>
-    </CategoryPreviewComponent>
+    </CategoryPreviewContainer>
   );
 };
 
